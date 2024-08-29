@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "autocrop-video"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Pedro Chagas", email="pchagas96@gmail.com" },
 ]
