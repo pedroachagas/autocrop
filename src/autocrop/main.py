@@ -73,6 +73,9 @@ def crop_video(input_file, output_file, crop_params):
 
 def display_frame(image_path):
     image = cv2.imread(image_path)
+    if image is None:
+        print(f"Error: Unable to read image file: {image_path}")
+        return
     cv2.imshow("Cropped Frame", image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
